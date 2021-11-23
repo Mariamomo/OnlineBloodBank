@@ -1,0 +1,79 @@
+body {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    font-size: 1.5rem!important;
+}
+
+
+.menu{
+
+ position: relative;
+}
+.menu ul{
+    margin:0;
+    padding-left:35%;
+    padding-right:35%;
+    height: 60px;
+    list-style:none;
+    background:#871617;
+    overflow:hidden;
+}
+.menu ul li{
+    float: left;
+    height: 60px;
+    border-right:0px solid #555;
+}
+.menu ul li a{
+    color:white;
+    padding:15px 20px;
+    display:block;
+    text-decoration:none;
+    font-size:22px;
+}
+.menu ul li a:hover{
+    background:#CF5C3F
+}
+
+mainbody{
+    position: relative;
+}
+
+/* needblood....form -----------*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 8px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 5px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+label{
+    padding-top: 15px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  margin-top: 40px!important;
+  border-radius: 5px;
+  padding: 20px;
+}

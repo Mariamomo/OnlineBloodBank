@@ -1,0 +1,94 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Online Blood Bank</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travello template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/registration.css' %}">
+
+</head>
+   <body>
+    <div class="container-fluid">
+         <div class="menu">
+         <ul>
+         <li><a href="home">HOME</a></li>
+         <li><a href="home">NEED BLOOD</a></li>
+         <li><a href="login.html">LOG IN</a></li>
+         </ul>
+         </div>
+    </div>
+    <mainbody>
+ <div class="container">
+  <form action="registration" method="post">
+      {% csrf_token %}
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="first_name" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="last_name" placeholder="Patient name..">
+    <label for="fname">UserName</label>
+    <input type="text" id="username" name="username" placeholder="Your name..">
+
+    <label for="dbirth">Date</label>
+    <input type="date" id="birthdate" name="birth_date" placeholder="dd-mm-year">
+    <br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <label for="state">STATE</label>
+    <select id="state" name="state">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <label for="city">City</label>
+    <select id="city" name="city">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <label for="blood_group">Blood Group</label>
+    <select id="blood_group" name="blood_group">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+    </select>
+    <label for="contact_number">Contact Number</label>
+    <input type="text" id="contact_number" name="contact_number" placeholder="Mobile Number">
+
+      <label for="email">Contact Number</label>
+      <input type="email" id="email" name="email" placeholder="email">
+     <label for="password">Password</label>
+     <input type="password" id="password" name="password" placeholder="password">
+
+      <label for="Cpassword" style="margin-left: 20px;">Confirm Password</label>
+     <input type="password" id="Cpassword" name="Cpassword" placeholder="password">
+      <br>
+    <label for="message">Message</label>
+    <textarea id="subject" name="message" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+   </mainbody>
+   </body>
+</html>
